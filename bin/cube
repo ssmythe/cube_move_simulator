@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#
+# bin/cube — launch the Rubik’s‐Cube CLI
+#
+# Usage: cube [–help] [-f FACELET] [-n NOTATION] [-c COLORS] [-m "MOVES"]
+
+# ensure our src/ is on PYTHONPATH
+export PYTHONPATH="$(dirname "$0")/../src"
+
+# invoke the module
+exec python -m cms.main "$@"

@@ -1,0 +1,4 @@
+pytest
+magiccube
+coverage
+pytest-cov
