@@ -1,2 +1,6 @@
 log.txt
 quality.txt
+.pytest_cache/
+htmlcov
+.coverage
+__pycache__
