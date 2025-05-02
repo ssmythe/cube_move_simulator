@@ -10,6 +10,26 @@ A command-line tool for parsing, visualizing, and manipulating Rubik's Cube stat
 - **Step-by-Step Moves**: Execute moves (`-m` / `--moves`) one by one, viewing the cube, edge map, and corner map after each step.
 - **Edge & Corner Visualization**: Compact, readable display of all edge and corner pieces at any stage.
 
+## Example Output
+
+<pre>
+         <span style="background-color:gray;color:black;"> W  W  W </span>
+         <span style="background-color:gray;color:black;"> W  W  W </span>
+         <span style="background-color:gray;color:black;"> W  W  W </span>
+<span style="background-color:orange;color:black;"> O  O  O </span><span style="background-color:green;color:black;"> G  G  G </span><span style="background-color:red;color:black;"> R  R  R </span><span style="background-color:blue;color:white;"> B  B  B </span>
+<span style="background-color:orange;color:black;"> O  O  O </span><span style="background-color:green;color:black;"> G  G  G </span><span style="background-color:red;color:black;"> R  R  R </span><span style="background-color:blue;color:white;"> B  B  B </span>
+<span style="background-color:orange;color:black;"> O  O  O </span><span style="background-color:green;color:black;"> G  G  G </span><span style="background-color:red;color:black;"> R  R  R </span><span style="background-color:blue;color:white;"> B  B  B </span>
+         <span style="background-color:yellow;color:black;"> Y  Y  Y </span>
+         <span style="background-color:yellow;color:black;"> Y  Y  Y </span>
+         <span style="background-color:yellow;color:black;"> Y  Y  Y </span>
+
+  UF W-G   UR W-R   UB W-B   UL W-O
+  FR G-R   FL G-O   BR B-R   BL B-O
+  DF Y-G   DR Y-R   DB Y-B   DL Y-O
+  UFR W-G-R   UFL W-O-G   UBL W-B-O   UBR W-R-B
+  DFR Y-G-R   DFL Y-O-G   DBL Y-B-O   DBR Y-R-B
+</pre>
+
 ## Installation
 
 ```bash
@@ -96,4 +116,3 @@ make coverage
 ## Contributing
 
 Contributions, issues, and feature requests are welcome! Please open an issue or submit a pull request.
-
